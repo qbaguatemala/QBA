@@ -1,0 +1,34 @@
+.quote-section {
+  padding: 6rem 2rem;
+  background-color: var(--surface-container-lowest);
+}
+
+.quote-container {
+  max-width: 56rem; /* max-w-4xl */
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote-text {
+  font-family: var(--font-headline);
+  font-size: 1.875rem; /* 3xl */
+  color: var(--primary);
+  line-height: 1.375; /* snug */
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .quote-text {
+    font-size: 2.25rem; /* 4xl */
+  }
+}
+
+.quote-author {
+  display: block;
+  margin-top: 2rem; /* mt-8 */
+  font-family: var(--font-label);
+  font-style: normal;
+  font-weight: 700;
+  color: var(--on-surface);
+}
