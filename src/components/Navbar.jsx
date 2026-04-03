@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container navbar-container">
-        <div className="navbar-logo">Qba Guatemala</div>
+        <div className="navbar-logo">
+          <img src="/logo.png" alt="Qba Guatemala Logo" style={{ height: '80px', width: 'auto', transform: 'scale(1.7)', transformOrigin: 'left center' }} />
+        </div>
         <div className="navbar-links">
           <a href="#products">Productos</a>
           <a href="#history">Nuestra Historia</a>
