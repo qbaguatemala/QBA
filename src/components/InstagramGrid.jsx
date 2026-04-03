@@ -34,7 +34,7 @@ const InstagramGrid = () => {
       <div className="container">
         <div className="insta-header">
           <h2 className="insta-title">Sigue nuestra historia en Instagram</h2>
-          <p className="insta-handle">@qba_guatemala</p>
+          <a href="https://www.instagram.com/qbaguatemala" target="_blank" rel="noopener noreferrer" className="insta-handle">@qbaguatemala</a>
         </div>
         <div className="insta-grid">
           {images.map(image => (
