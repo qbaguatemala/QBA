@@ -18,6 +18,32 @@
 .insta-handle {
   color: var(--primary);
   font-weight: 700;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.insta-handle::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.insta-handle:hover {
+  color: var(--primary-dim, #5a6650);
+}
+
+.insta-handle:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .insta-grid {
