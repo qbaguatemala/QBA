@@ -1,18 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="container navbar-container">
         <div className="navbar-logo">
           <img src="/logo.png" alt="Qba Guatemala Logo" style={{ height: '80px', width: 'auto', transform: 'scale(1.7)', transformOrigin: 'left center' }} />
         </div>
-        <div className="navbar-links">
-          <a href="#products">Productos</a>
-          <a href="#history">Nuestra Historia</a>
-          <a href="#contact">Contacto</a>
+
+        <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menú">
+          <span className="material-symbols-outlined">
+            {isMobileMenuOpen ? 'close' : 'menu'}
+          </span>
+        </button>
+
+        <div className={`navbar-links ${isMobileMenuOpen ? 'nav-active' : ''}`}>
+          <a href="#products" onClick={closeMenu}>Productos</a>
+          <a href="#history" onClick={closeMenu}>Nuestra Historia</a>
+          <a href="#contact" onClick={closeMenu}>Contacto</a>
         </div>
+
         <div className="navbar-cta-container">
           <button className="navbar-cta" onClick={() => document.getElementById('contact').scrollIntoView()}>
             Contacto
