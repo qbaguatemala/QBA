@@ -13,9 +13,11 @@ const Navbar = () => {
           <a href="#history">Nuestra Historia</a>
           <a href="#contact">Contacto</a>
         </div>
-        <button className="navbar-cta" onClick={() => document.getElementById('contact').scrollIntoView()}>
-          Contacto
-        </button>
+        <div className="navbar-cta-container">
+          <button className="navbar-cta" onClick={() => document.getElementById('contact').scrollIntoView()}>
+            Contacto
+          </button>
+        </div>
       </div>
     </nav>
   );

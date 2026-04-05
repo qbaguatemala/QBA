@@ -27,6 +27,13 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--on-surface);
+  flex: 1;
+}
+
+.navbar-cta-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar-links {
