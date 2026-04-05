@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
+  const phoneNumber = process.env.REACT_APP_PHONE_NUMBER
+
   return (
     <footer className="footer-section">
       <div className="container footer-container">
@@ -16,7 +18,7 @@ const Footer = () => {
           <div className="footer-links">
             <span className="footer-heading">Explora</span>
             <a href="#">Instagram</a>
-            <a href="#">WhatsApp</a>
+            <a href={`https://wa.me/${phoneNumber}?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos`} target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a href="#contact">Contacto</a>
             <a href="#">Privacidad</a>
           </div>
