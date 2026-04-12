@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Jabones de Glicerina",
+    "description": "Hidratación profunda con aromas naturales",
+    "image": "jabon.jpeg",
+    "alt": "Jabones de glicerina artesanales"
+  },
+  {
+    "id": 2,
+    "title": "Protector solar",
+    "description": "Cuida tu piel de forma natural frente al sol",
+    "image": "protector_solar.jpeg",
+    "alt": "Envase de protector solar natural",
+    "bordered": true
+  },
+  {
+    "id": 3,
+    "title": "Repelente",
+    "description": "Aleja a los insectos con ingredientes botánicos",
+    "image": "repelente.jpeg",
+    "alt": "Envase de repelente de insectos natural"
+  }
+]
