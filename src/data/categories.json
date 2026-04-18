@@ -4,7 +4,8 @@
     "title": "Jabones de Glicerina",
     "description": "Hidratación profunda con aromas naturales",
     "image": "jabon.jpeg",
-    "alt": "Jabones de glicerina artesanales"
+    "alt": "Jabones de glicerina artesanales",
+    "bordered": true
   },
   {
     "id": 2,
@@ -19,6 +20,7 @@
     "title": "Repelente",
     "description": "Aleja a los insectos con ingredientes botánicos",
     "image": "repelente.jpeg",
-    "alt": "Envase de repelente de insectos natural"
+    "alt": "Envase de repelente de insectos natural",
+    "bordered": true
   }
 ]
