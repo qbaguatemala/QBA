@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <div className="navbar-logo">
-          <img src="/logo.png" alt="Qba Guatemala Logo" style={{ height: '80px', width: 'auto', transform: 'scale(1.7)', transformOrigin: 'left center' }} />
+          <img src="/logo.svg" alt="Qba Guatemala Logo" style={{ height: '190px', width: 'auto', transformOrigin: 'left center', marginTop: '15px' }} />
         </div>
 
         <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menú">
