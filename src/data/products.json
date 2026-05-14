@@ -1,0 +1,164 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Perfume Mist Repelente",
+      "precio": 25.00,
+      "moneda": "Q",
+      "descripcion": "Con aceites esenciales para repeler insectos.",
+      "destacado": true,
+      "nuevo": false
+    },
+    {
+      "id": 2,
+      "nombre": "Protector solar en barra",
+      "precio": 60.00,
+      "moneda": "Q",
+      "descripcion": "Con óxido de zinc, manteca de karité, Vit E y aceites esenciales.",
+      "destacado": true,
+      "nuevo": false
+    },
+    {
+      "id": 3,
+      "nombre": "Protector solar con base de maquillaje",
+      "precio": 60.00,
+      "moneda": "Q",
+      "descripcion": "Con color natural para unificar el color del cutis.",
+      "destacado": false,
+      "nuevo": true
+    },
+    {
+      "id": 4,
+      "nombre": "Acondicionador sólido",
+      "precio": 40.00,
+      "moneda": "Q",
+      "descripcion": "Humecta y nutre al cabello.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 5,
+      "nombre": "Jabón de glicerina",
+      "precio_min": 20.00,
+      "precio_max": 80.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "notas": "Jabones con aceites esenciales y distintos ingredientes como café, canela, etc. Precio depende del tamaño",
+      "destacado": true,
+      "nuevo": false,
+      "diseños": [
+        "Limón rosa",
+        "Limón amarillo",
+        "Limón blanco/beige",
+        "Limón transparente",
+        "Limón morado",
+        "Cupcake rosa",
+        "Cupcake marrón",
+        "Cupcake naranja degradado",
+        "Flor decorativa",
+        "Dona degradada",
+        "Dona con café",
+        "Rosa caramelo"
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Champú sólido",
+      "precio": 80.00,
+      "moneda": "Q",
+      "descripcion": "Anticaída y promueve el crecimiento. Cabello graso y seco.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 7,
+      "nombre": "Sérum Hidratante",
+      "precio": 75.00,
+      "moneda": "Q",
+      "descripcion": "Sérum día o noche. Mezcla de aceites vegetales.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 8,
+      "nombre": "Mezcla de Apoyo Hormonal",
+      "precio": 55.00,
+      "moneda": "Q",
+      "descripcion": "Mezcla de aceites esenciales.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 9,
+      "nombre": "Sérum Tratamiento Capilar",
+      "precio": 50.00,
+      "moneda": "Q",
+      "descripcion": "Mezcla de aceites vegetales y Aceite Esencial.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 10,
+      "nombre": "Desodorante roll on Unisex",
+      "precio": 60.00,
+      "moneda": "Q",
+      "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma.",
+      "destacado": false,
+      "nuevo": true
+    },
+    {
+      "id": 11,
+      "nombre": "Desodorante roll on Hombre",
+      "precio": 70.00,
+      "moneda": "Q",
+      "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma; para hombres.",
+      "destacado": false,
+      "nuevo": true
+    },
+    {
+      "id": 12,
+      "nombre": "Desodorante en barra",
+      "precio": 60.00,
+      "moneda": "Q",
+      "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma.",
+      "destacado": false,
+      "nuevo": true
+    },
+    {
+      "id": 13,
+      "nombre": "Crema anti-acné",
+      "precio": 50.00,
+      "moneda": "Q",
+      "descripcion": "Con Aceites esenciales para controlar el acné.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 14,
+      "nombre": "Deep Blue Blends",
+      "precio": 140.00,
+      "moneda": "Q",
+      "descripcion": "Deep blue Doterra diluido.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 15,
+      "nombre": "Jabón Líquido Hidratante",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Base jabón líquido, agua de rosas, aceites esenciales para el rostro, acné o con carbón activado.",
+      "destacado": false,
+      "nuevo": false
+    },
+    {
+      "id": 16,
+      "nombre": "Barra para rasurar",
+      "precio": 35.00,
+      "moneda": "Q",
+      "descripcion": "Base jabón de glicerina, aloe vera, aceite vegetal, glicerina.",
+      "destacado": false,
+      "nuevo": true
+    }
+  ]
+}

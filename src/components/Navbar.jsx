@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ toggleCart, cartItemsCount }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,23 +17,42 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <div className="navbar-logo">
-          <img src="/logo.svg" alt="Qba Guatemala Logo" style={{ height: '190px', width: 'auto', transformOrigin: 'left center', marginTop: '15px' }} />
+          <Link to="/">
+            <img src="/logo.svg" alt="Qba Guatemala Logo" style={{ height: '190px', width: 'auto', transformOrigin: 'left center', marginTop: '15px' }} />
+          </Link>
         </div>
 
-        <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menú">
-          <span className="material-symbols-outlined">
-            {isMobileMenuOpen ? 'close' : 'menu'}
-          </span>
-        </button>
+        <div className="mobile-actions">
+          <button className="cart-btn" onClick={toggleCart} aria-label="Carrito">
+            <span className="material-symbols-outlined">shopping_cart</span>
+            {cartItemsCount > 0 && <span className="cart-badge">{cartItemsCount}</span>}
+          </button>
+          
+          <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menú">
+            <span className="material-symbols-outlined">
+              {isMobileMenuOpen ? 'close' : 'menu'}
+            </span>
+          </button>
+        </div>
 
         <div className={`navbar-links ${isMobileMenuOpen ? 'nav-active' : ''}`}>
-          <a href="#products" onClick={closeMenu}>Productos</a>
-          <a href="#history" onClick={closeMenu}>Nuestra Historia</a>
-          <a href="#contact" onClick={closeMenu}>Contacto</a>
+          <Link to="/catalog" onClick={closeMenu}>Catálogo</Link>
+          <a href="/#history" onClick={closeMenu}>Nuestra Historia</a>
+          <a href="/#contact" onClick={closeMenu}>Contacto</a>
         </div>
 
         <div className="navbar-cta-container">
-          <button className="navbar-cta" onClick={() => document.getElementById('contact').scrollIntoView()}>
+          <button className="cart-btn desktop-cart-btn" onClick={toggleCart} aria-label="Carrito">
+            <span className="material-symbols-outlined">shopping_cart</span>
+            {cartItemsCount > 0 && <span className="cart-badge">{cartItemsCount}</span>}
+          </button>
+          <button className="navbar-cta" onClick={() => {
+            if (window.location.pathname !== '/') {
+              window.location.href = '/#contact';
+            } else {
+              document.getElementById('contact')?.scrollIntoView();
+            }
+          }}>
             Contacto
           </button>
         </div>
