@@ -1,6 +1,6 @@
 .product-catalog-section {
   padding: 4rem 0;
-  background-color: var(--color-background);
+  background-color: var(--background);
 }
 
 .catalog-grid {
@@ -13,7 +13,7 @@
 .product-card {
   background-color: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -23,7 +23,7 @@
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-color: var(--color-primary);
+  border-color: var(--primary);
 }
 
 .product-image-container {
@@ -59,14 +59,14 @@
 
 .badge.featured {
   left: 1rem;
-  background-color: var(--color-secondary);
+  background-color: var(--secondary);
   color: #fff;
 }
 
 .badge.new {
   right: 1rem;
-  background-color: var(--color-primary);
-  color: var(--color-background);
+  background-color: var(--primary);
+  color: var(--background);
 }
 
 .product-info {
@@ -77,15 +77,15 @@
 }
 
 .product-name {
-  font-family: var(--font-heading);
+  font-family: var(--font-headline);
   font-size: 1.25rem;
-  color: var(--color-text-primary);
+  color: var(--on-surface);
   margin-bottom: 0.5rem;
 }
 
 .product-description {
   font-size: 0.9rem;
-  color: var(--color-text-secondary);
+  color: var(--on-surface-variant);
   margin-bottom: 1.5rem;
   flex-grow: 1;
 }
@@ -98,16 +98,16 @@
 }
 
 .product-price {
-  font-family: var(--font-heading);
+  font-family: var(--font-headline);
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--primary);
 }
 
 .add-to-cart-btn {
   background-color: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -117,6 +117,6 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: var(--color-primary);
-  color: var(--color-background);
+  background-color: var(--primary);
+  color: var(--background);
 }

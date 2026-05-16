@@ -24,7 +24,7 @@
   width: 100%;
   max-width: 400px;
   height: 100vh;
-  background-color: var(--color-background);
+  background-color: var(--background);
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   transition: right 0.3s ease;
@@ -46,16 +46,16 @@
 }
 
 .cart-header h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-headline);
   font-size: 1.5rem;
-  color: var(--color-primary);
+  color: var(--primary);
   margin: 0;
 }
 
 .close-cart-btn {
   background: none;
   border: none;
-  color: var(--color-text-secondary);
+  color: var(--on-surface-variant);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@
 
 .close-cart-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--color-text-primary);
+  color: var(--on-surface);
 }
 
 .cart-items {
@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: var(--color-text-secondary);
+  color: var(--on-surface-variant);
   opacity: 0.5;
 }
 
@@ -125,12 +125,12 @@
 .cart-item-title {
   font-size: 1rem;
   margin: 0 0 0.25rem 0;
-  color: var(--color-text-primary);
+  color: var(--on-surface);
 }
 
 .cart-item-price {
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--primary);
   margin: 0 0 0.5rem 0;
 }
 
@@ -152,7 +152,7 @@
 .quantity-controls button {
   background: none;
   border: none;
-  color: var(--color-text-primary);
+  color: var(--on-surface);
   width: 28px;
   height: 28px;
   display: flex;
@@ -197,17 +197,17 @@
   align-items: center;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-text-primary);
+  color: var(--on-surface);
   margin-bottom: 1.5rem;
 }
 
 .checkout-btn {
   width: 100%;
   padding: 1rem;
-  background-color: var(--color-primary);
-  color: var(--color-background);
+  background-color: var(--primary);
+  color: var(--background);
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -215,5 +215,5 @@
 }
 
 .checkout-btn:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--secondary);
 }
