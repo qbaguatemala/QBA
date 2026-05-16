@@ -7,7 +7,8 @@
       "moneda": "Q",
       "descripcion": "Con aceites esenciales para repeler insectos.",
       "destacado": true,
-      "nuevo": false
+      "nuevo": false,
+      "imagen": "/catalog/repelente.jpeg"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "moneda": "Q",
       "descripcion": "Con óxido de zinc, manteca de karité, Vit E y aceites esenciales.",
       "destacado": true,
-      "nuevo": false
+      "nuevo": false,
+      "imagen": "/catalog/protector_solar.jpeg"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "moneda": "Q",
       "descripcion": "Con color natural para unificar el color del cutis.",
       "destacado": false,
-      "nuevo": true
+      "nuevo": true,
+      "imagen": "/catalog/protector_solar_maquillaje.jpeg"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "moneda": "Q",
       "descripcion": "Humecta y nutre al cabello.",
       "destacado": false,
-      "nuevo": false
+      "nuevo": false,
+      "imagen": "/catalog/conditioner.jpeg"
     },
     {
       "id": 5,
@@ -59,7 +63,8 @@
         "Dona degradada",
         "Dona con café",
         "Rosa caramelo"
-      ]
+      ],
+      "imagen": "/catalog/jabon_1.jpeg"
     },
     {
       "id": 6,
@@ -68,7 +73,8 @@
       "moneda": "Q",
       "descripcion": "Anticaída y promueve el crecimiento. Cabello graso y seco.",
       "destacado": false,
-      "nuevo": false
+      "nuevo": false,
+      "imagen": "/catalog/champu.jpeg"
     },
     {
       "id": 7,
@@ -77,7 +83,8 @@
       "moneda": "Q",
       "descripcion": "Sérum día o noche. Mezcla de aceites vegetales.",
       "destacado": false,
-      "nuevo": false
+      "nuevo": false,
+      "imagen": "/catalog/serum_rostro.jpeg"
     },
     {
       "id": 8,
@@ -86,7 +93,8 @@
       "moneda": "Q",
       "descripcion": "Mezcla de aceites esenciales.",
       "destacado": false,
-      "nuevo": false
+      "nuevo": false,
+      "imagen": ""
     },
     {
       "id": 9,
@@ -95,7 +103,8 @@
       "moneda": "Q",
       "descripcion": "Mezcla de aceites vegetales y Aceite Esencial.",
       "destacado": false,
-      "nuevo": false
+      "nuevo": false,
+      "imagen": "/catalog/serum_cabello.jpeg"
     },
     {
       "id": 10,
@@ -104,7 +113,8 @@
       "moneda": "Q",
       "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma.",
       "destacado": false,
-      "nuevo": true
+      "nuevo": true,
+      "imagen": "/catalog/desodorante_unisex.jpeg"
     },
     {
       "id": 11,
@@ -113,7 +123,8 @@
       "moneda": "Q",
       "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma; para hombres.",
       "destacado": false,
-      "nuevo": true
+      "nuevo": true,
+      "imagen": ""
     },
     {
       "id": 12,
@@ -122,43 +133,18 @@
       "moneda": "Q",
       "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma.",
       "destacado": false,
-      "nuevo": true
+      "nuevo": true,
+      "imagen": "/catalog/desodorante_unisex_2.jpeg"
     },
     {
       "id": 13,
-      "nombre": "Crema anti-acné",
-      "precio": 50.00,
-      "moneda": "Q",
-      "descripcion": "Con Aceites esenciales para controlar el acné.",
-      "destacado": false,
-      "nuevo": false
-    },
-    {
-      "id": 14,
-      "nombre": "Deep Blue Blends",
-      "precio": 140.00,
-      "moneda": "Q",
-      "descripcion": "Deep blue Doterra diluido.",
-      "destacado": false,
-      "nuevo": false
-    },
-    {
-      "id": 15,
-      "nombre": "Jabón Líquido Hidratante",
-      "precio": 30.00,
-      "moneda": "Q",
-      "descripcion": "Base jabón líquido, agua de rosas, aceites esenciales para el rostro, acné o con carbón activado.",
-      "destacado": false,
-      "nuevo": false
-    },
-    {
-      "id": 16,
       "nombre": "Barra para rasurar",
       "precio": 35.00,
       "moneda": "Q",
       "descripcion": "Base jabón de glicerina, aloe vera, aceite vegetal, glicerina.",
       "destacado": false,
-      "nuevo": true
+      "nuevo": true,
+      "imagen": "/catalog/jabon_rasurar.jpeg"
     }
   ]
 }
