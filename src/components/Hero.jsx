@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="hero">
       <div className="hero-background">
@@ -23,7 +26,7 @@ const Hero = () => {
           <button className="btn-primary" onClick={() => document.getElementById('history').scrollIntoView()}>
             Nuestra Filosofía
           </button>
-          <button className="btn-secondary" onClick={() => document.getElementById('products').scrollIntoView()}>
+          <button className="btn-secondary" onClick={() => navigate('/catalog')}>
             Ver Productos
           </button>
         </div>
