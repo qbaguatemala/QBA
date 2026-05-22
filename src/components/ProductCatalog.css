@@ -3,11 +3,92 @@
   background-color: var(--background);
 }
 
+.catalog-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.catalog-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 42px;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(119, 88, 78, 0.28);
+  border-radius: var(--border-radius-full);
+  background-color: rgba(255, 255, 255, 0.35);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.catalog-filter-btn:hover,
+.catalog-filter-btn.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--on-primary);
+  transform: translateY(-2px);
+}
+
+.catalog-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.55rem;
+  height: 1.55rem;
+  padding: 0 0.4rem;
+  border-radius: var(--border-radius-full);
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+  font-size: 0.75rem;
+}
+
+.catalog-filter-btn.active .catalog-filter-count,
+.catalog-filter-btn:hover .catalog-filter-count {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+.catalog-section {
+  margin-bottom: 5rem;
+}
+
+.catalog-section.last {
+  margin-bottom: 0;
+}
+
+.catalog-section .section-header {
+  margin-bottom: 2rem;
+}
+
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.catalog-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  gap: 0.75rem;
+  border: 1px dashed rgba(119, 88, 78, 0.3);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  text-align: center;
+}
+
+.catalog-empty-state .material-symbols-outlined {
+  color: var(--primary);
+  font-size: 2.5rem;
 }
 
 .product-card {
