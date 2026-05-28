@@ -34,6 +34,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .mobile-actions {
@@ -155,7 +156,7 @@
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-    gap: 2rem;
+    gap: 1.25rem;
   }
 
   .navbar-links a {
@@ -164,18 +165,35 @@
 }
 
 .navbar-links a {
+  position: relative;
   font-family: var(--font-headline);
   font-size: 1.125rem;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
   color: var(--on-surface);
   transition: color 0.3s ease;
 }
 
-.navbar-links a:hover {
+.navbar-links a:hover,
+.navbar-links a.active {
   color: var(--primary);
 }
 
+.navbar-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.35rem;
+  height: 2px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--primary);
+}
+
 .navbar-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
   background: linear-gradient(to right, var(--primary), var(--primary-dim));
   color: var(--on-primary);
   padding: 0.625rem 2rem;
@@ -186,6 +204,14 @@
   transition: all 0.2s ease;
   transform: scale(0.95);
   box-shadow: 0 10px 15px -3px rgba(119, 88, 78, 0.1), 0 4px 6px -2px rgba(119, 88, 78, 0.05);
+}
+
+.navbar-cta .material-symbols-outlined {
+  font-size: 1.15rem;
+}
+
+.navbar-cta-cart {
+  padding-inline: 1.35rem;
 }
 
 .navbar-cta:hover {

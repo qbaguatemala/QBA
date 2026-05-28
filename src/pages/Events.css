@@ -1,0 +1,256 @@
+.events-page {
+  padding-top: 120px;
+  background:
+    linear-gradient(180deg, rgba(251, 249, 244, 0.96), rgba(239, 238, 231, 0.9) 42%, var(--background));
+}
+
+.events-hero {
+  padding: 4.5rem 0 2.5rem;
+}
+
+.events-hero-inner {
+  display: grid;
+  gap: 2rem;
+}
+
+.events-hero-copy {
+  max-width: 56rem;
+}
+
+.events-kicker {
+  display: inline-flex;
+  margin-bottom: 0.9rem;
+  color: var(--primary);
+  font-family: var(--font-label);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.events-hero h1,
+.events-contact-panel h2 {
+  color: var(--on-surface);
+  font-family: var(--font-headline);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.events-hero h1 {
+  max-width: 48rem;
+  font-size: 4.9rem;
+  line-height: 0.98;
+}
+
+.events-hero p,
+.events-contact-panel p {
+  color: var(--on-surface-variant);
+  line-height: 1.7;
+}
+
+.events-hero p {
+  max-width: 42rem;
+  margin-top: 1.35rem;
+  font-size: 1.08rem;
+}
+
+.events-gallery-section {
+  padding: 1.5rem 0 5rem;
+}
+
+.events-bento-grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: 170px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.event-bento-card {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--surface-container);
+  box-shadow: 0 18px 45px rgba(49, 51, 46, 0.12);
+}
+
+.event-bento-card-1,
+.event-bento-card-6 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.event-bento-card-2 {
+  grid-column: span 2;
+}
+
+.event-bento-card-3,
+.event-bento-card-4,
+.event-bento-card-5 {
+  grid-column: span 1;
+}
+
+.event-bento-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.event-bento-card:hover img {
+  transform: scale(1.05);
+}
+
+.event-bento-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1.5rem;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(14, 14, 12, 0), rgba(14, 14, 12, 0.78));
+}
+
+.event-bento-overlay span {
+  display: block;
+  font-family: var(--font-headline);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.event-bento-overlay p {
+  max-width: 32rem;
+  margin-top: 0.35rem;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.events-contact-section {
+  padding: 0 0 6rem;
+}
+
+.events-contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.25rem;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--primary);
+  color: var(--on-primary);
+  box-shadow: 0 24px 60px rgba(49, 51, 46, 0.2);
+}
+
+.events-contact-panel .events-kicker,
+.events-contact-panel h2,
+.events-contact-panel p {
+  color: var(--on-primary);
+}
+
+.events-contact-panel h2 {
+  font-size: 3rem;
+}
+
+.events-contact-panel p {
+  max-width: 46rem;
+  margin-top: 0.85rem;
+  opacity: 0.9;
+}
+
+.events-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 52px;
+  padding: 0.85rem 1.35rem;
+  border-radius: var(--border-radius-full);
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+  font-family: var(--font-label);
+  font-weight: 800;
+  white-space: nowrap;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.events-whatsapp-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .events-hero h1 {
+    font-size: 3.6rem;
+  }
+
+  .events-contact-panel h2 {
+    font-size: 2.45rem;
+  }
+
+  .events-bento-grid {
+    grid-auto-rows: 180px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .event-bento-card-1,
+  .event-bento-card-2,
+  .event-bento-card-6 {
+    grid-column: span 2;
+  }
+
+  .events-contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .events-whatsapp-btn {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .events-page {
+    padding-top: 100px;
+  }
+
+  .events-hero {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .events-hero h1 {
+    font-size: 2.55rem;
+    line-height: 1.05;
+  }
+
+  .events-contact-panel h2 {
+    font-size: 2rem;
+  }
+
+  .events-bento-grid {
+    grid-auto-rows: 235px;
+    grid-template-columns: 1fr;
+  }
+
+  .event-bento-card,
+  .event-bento-card-1,
+  .event-bento-card-2,
+  .event-bento-card-3,
+  .event-bento-card-4,
+  .event-bento-card-5,
+  .event-bento-card-6 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .event-bento-overlay {
+    padding: 1.15rem;
+  }
+
+  .events-contact-panel {
+    padding: 1.5rem;
+  }
+
+  .events-whatsapp-btn {
+    width: 100%;
+    white-space: normal;
+  }
+}

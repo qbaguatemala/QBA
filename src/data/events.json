@@ -1,0 +1,70 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "nombre": "Flores en tonos rosa",
+      "descripcion": "Jabones florales de glicerina en tonos rosados y durazno, ideales para mesas de recuerdos o regalos delicados.",
+      "imagen": "/catalog/evento_flores.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Barras florales",
+      "descripcion": "Barras transparentes de glicerina con flores en relieve, pensadas para detalles elegantes y personalizados.",
+      "imagen": "/catalog/evento_flores_2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Detalle de agradecimiento",
+      "descripcion": "Jabon floral empacado con etiqueta personalizada, perfecto para agradecer a invitados en celebraciones especiales.",
+      "imagen": "/catalog/evento_jabon.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Jabones citricos",
+      "descripcion": "Jabones redondos con relieve de rodaja citrica, una opcion fresca para recuerdos de evento en cantidades mayores.",
+      "imagen": "/catalog/evento_jabones.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Kit de productos Qba",
+      "descripcion": "Bolsa kraft con seleccion de productos Qba, lista para regalar como kit de bienestar o detalle corporativo.",
+      "imagen": "/catalog/evento_productos.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Mesa de regalos botanicos",
+      "descripcion": "Composicion de serums, jabones, desodorantes y detalles empacados con una estetica natural para eventos.",
+      "imagen": "/catalog/evento_productos_2.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Cupcakes de canela",
+      "descripcion": "Jabones tipo cupcake en tonos calidos con inspiracion de canela, ideales para regalos aromaticos y tematicos.",
+      "imagen": "/catalog/jabon_glicerina_cupcake_canela_2.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Jabones botanicos",
+      "descripcion": "Jabones decorativos con formas florales y detalles botanicos, presentados con petalos y aceites naturales.",
+      "imagen": "/catalog/evento_flores_3.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Souvenirs rusticos",
+      "descripcion": "Jabones redondos empacados con etiqueta Qba y caja kraft, pensados para recuerdos con estilo artesanal.",
+      "imagen": "/catalog/evento_kit.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Kit spa personalizado",
+      "descripcion": "Set con jabones y caja kraft atada con cordel, una opcion lista para regalar en eventos especiales.",
+      "imagen": "/catalog/evento_kit_2.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Cajas individuales",
+      "descripcion": "Jabones citricos acomodados en cajas individuales, listos para entregar a invitados.",
+      "imagen": "/catalog/evento_jabones_2.jpg"
+    }
+  ]
+}

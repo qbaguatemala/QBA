@@ -1,39 +1,62 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import productsData from '../data/products.json';
 import './ProductCatalog.css';
 
 const productFilters = [
   { id: 'all', label: 'Todos' },
-  { id: 'general', label: 'Catálogo' },
+  { id: 'general', label: 'Catalogo' },
   { id: 'jabon', label: 'Jabones' },
-  { id: 'evento', label: 'Eventos' },
 ];
 
 const ProductCatalog = ({ addToCart }) => {
   const { productos } = productsData;
   const [activeFilter, setActiveFilter] = useState('all');
+  const location = useLocation();
 
-  const eventos = productos.filter(p => p.categoria === 'evento');
-  const jabones = productos.filter(p => p.categoria === 'jabon');
-  const otrosProductos = productos.filter(p => p.categoria !== 'jabon' && p.categoria !== 'evento');
+  useEffect(() => {
+    const syncFilterWithHash = () => {
+      const hash = window.location.hash.replace('#catalog-', '');
+      const selectedFilter = productFilters.some(filter => filter.id === hash) ? hash : 'all';
+      setActiveFilter(selectedFilter);
+    };
+
+    syncFilterWithHash();
+    window.addEventListener('hashchange', syncFilterWithHash);
+
+    return () => window.removeEventListener('hashchange', syncFilterWithHash);
+  }, []);
+
+  useEffect(() => {
+    const hash = location.hash.replace('#catalog-', '');
+    const selectedFilter = productFilters.some(filter => filter.id === hash) ? hash : 'all';
+    setActiveFilter(selectedFilter);
+  }, [location.hash]);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash.startsWith('#catalog-')) return;
+
+    window.setTimeout(() => {
+      const target = document.querySelector(hash);
+      target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 0);
+  }, [activeFilter]);
+
+  const jabones = productos.filter(product => product.categoria === 'jabon');
+  const otrosProductos = productos.filter(product => product.categoria !== 'jabon' && product.categoria !== 'evento');
 
   const productSections = [
     {
-      id: 'evento',
-      title: 'Eventos y Detalles Especiales',
-      subtitle: 'Jabones y productos únicos, perfectos para regalar en ocasiones especiales',
-      products: eventos,
-    },
-    {
       id: 'jabon',
       title: 'Jabones Artesanales',
-      subtitle: 'Nuestra colección especial de jabones decorativos, humectantes y nutritivos',
+      subtitle: 'Nuestra coleccion especial de jabones decorativos, humectantes y nutritivos',
       products: jabones,
     },
     {
       id: 'general',
-      title: 'Nuestro Catálogo',
-      subtitle: 'Descubre nuestra línea completa de productos botánicos',
+      title: 'Nuestro Catalogo',
+      subtitle: 'Descubre nuestra linea completa de productos naturales',
       products: otrosProductos,
     },
   ];
@@ -42,7 +65,7 @@ const ProductCatalog = ({ addToCart }) => {
     counts[section.id] = section.products.length;
     counts.all += section.products.length;
     return counts;
-  }, { all: 0, general: 0, jabon: 0, evento: 0 });
+  }, { all: 0, general: 0, jabon: 0 });
 
   const visibleSections = activeFilter === 'all'
     ? productSections.filter(section => section.products.length > 0)
@@ -63,7 +86,9 @@ const ProductCatalog = ({ addToCart }) => {
         <h3 className="product-name">{product.nombre}</h3>
         <p className="product-description">{product.descripcion}</p>
         <div className="product-footer">
-          <span className="product-price">{product.moneda} {product.precio ? product.precio.toFixed(2) : (product.precio_min ? `${product.precio_min.toFixed(2)} - ${product.precio_max.toFixed(2)}` : "0.00")}</span>
+          <span className="product-price">
+            {product.moneda} {product.precio ? product.precio.toFixed(2) : (product.precio_min ? `${product.precio_min.toFixed(2)} - ${product.precio_max.toFixed(2)}` : '0.00')}
+          </span>
           <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
             Agregar
           </button>
@@ -75,13 +100,17 @@ const ProductCatalog = ({ addToCart }) => {
   return (
     <section className="product-catalog-section">
       <div className="container">
-        <div className="catalog-filter-bar" aria-label="Filtrar productos por tipo">
+        <div id="catalog-all" className="catalog-filter-bar" aria-label="Filtrar productos por tipo">
           {productFilters.map(filter => (
             <button
               key={filter.id}
               type="button"
               className={`catalog-filter-btn ${activeFilter === filter.id ? 'active' : ''}`}
-              onClick={() => setActiveFilter(filter.id)}
+              onClick={() => {
+                setActiveFilter(filter.id);
+                const hash = filter.id === 'all' ? 'catalog-all' : `catalog-${filter.id}`;
+                window.history.replaceState(null, '', `${window.location.pathname}#${hash}`);
+              }}
               aria-pressed={activeFilter === filter.id}
             >
               <span>{filter.label}</span>
@@ -93,6 +122,7 @@ const ProductCatalog = ({ addToCart }) => {
         {visibleSections.map((section, index) => (
           <div
             key={section.id}
+            id={`catalog-${section.id}`}
             className={`catalog-section ${index === visibleSections.length - 1 ? 'last' : ''}`}
           >
             <div className="section-header">
@@ -107,7 +137,7 @@ const ProductCatalog = ({ addToCart }) => {
             ) : (
               <div className="catalog-empty-state">
                 <span className="material-symbols-outlined">inventory_2</span>
-                <p>Aún no hay productos disponibles en esta categoría.</p>
+                <p>Aun no hay productos disponibles en esta categoria.</p>
               </div>
             )}
           </div>
