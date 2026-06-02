@@ -87,7 +87,7 @@ const ProductCatalog = ({ addToCart }) => {
         <p className="product-description">{product.descripcion}</p>
         <div className="product-footer">
           <span className="product-price">
-            {product.moneda} {product.precio ? product.precio.toFixed(2) : (product.precio_min ? `${product.precio_min.toFixed(2)} - ${product.precio_max.toFixed(2)}` : '0.00')}
+            {product.moneda} {product.precio ? product.precio.toFixed(2) : '0.00'}
           </span>
           <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
             Agregar

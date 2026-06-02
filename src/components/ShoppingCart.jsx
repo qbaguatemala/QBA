@@ -3,7 +3,7 @@ import './ShoppingCart.css';
 
 const ShoppingCart = ({ isOpen, toggleCart, cartItems, updateQuantity, removeFromCart }) => {
   const total = cartItems.reduce((sum, item) => {
-    const price = item.precio || item.precio_min || 0;
+    const price = item.precio || 0;
     return sum + (price * item.quantity);
   }, 0);
 
@@ -37,7 +37,7 @@ const ShoppingCart = ({ isOpen, toggleCart, cartItems, updateQuantity, removeFro
                 <div className="cart-item-details">
                   <h4 className="cart-item-title">{item.nombre}</h4>
                   <p className="cart-item-price">
-                    {item.moneda} {item.precio ? item.precio.toFixed(2) : (item.precio_min ? item.precio_min.toFixed(2) : "0.00")}
+                    {item.moneda} {item.precio ? item.precio.toFixed(2) : "0.00"}
                   </p>
                   <div className="cart-item-actions">
                     <div className="quantity-controls">
