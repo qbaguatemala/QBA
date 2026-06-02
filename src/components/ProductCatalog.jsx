@@ -74,8 +74,14 @@ const ProductCatalog = ({ addToCart }) => {
   const renderProductCard = (product) => (
     <div key={product.id} className="product-card">
       <div className="product-image-container">
-        {product.destacado && <span className="badge featured">Destacado</span>}
-        {product.nuevo && <span className="badge new">Nuevo</span>}
+        {product.agotado ? (
+          <span className="badge sold-out">Agotado</span>
+        ) : (
+          <>
+            {product.destacado && <span className="badge featured">Destacado</span>}
+            {product.nuevo && <span className="badge new">Nuevo</span>}
+          </>
+        )}
         <img
           src={product.imagen || '/catalog/placeholder.jpeg'}
           alt={product.nombre}

@@ -152,6 +152,12 @@
   color: var(--background);
 }
 
+.badge.sold-out {
+  left: 1rem;
+  background-color: #b3261e;
+  color: #fff;
+}
+
 .product-info {
   padding: 1.5rem;
   display: flex;

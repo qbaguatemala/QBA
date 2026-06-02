@@ -9,6 +9,7 @@
       "descripcion": "Con aceites esenciales para repeler insectos.",
       "destacado": true,
       "nuevo": false,
+      "agotado": true,
       "imagen": "/catalog/repelente_2.jpg"
     },
     {
@@ -20,6 +21,7 @@
       "descripcion": "Con color natural para unificar el color del cutis.",
       "destacado": false,
       "nuevo": true,
+      "agotado": true,
       "imagen": "/catalog/protector_solar_maquillaje.jpeg"
     },
     {
