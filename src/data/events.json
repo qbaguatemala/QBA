@@ -65,6 +65,12 @@
       "nombre": "Cajas individuales",
       "descripcion": "Jabones citricos acomodados en cajas individuales, listos para entregar a invitados.",
       "imagen": "/catalog/evento_jabones_2.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Jabones decorativos",
+      "descripcion": "Jabones con formas y colores decorativos, ideales para detalles de eventos con un toque especial.",
+      "imagen": "/catalog/evento_caballos.jpeg"
     }
   ]
 }
