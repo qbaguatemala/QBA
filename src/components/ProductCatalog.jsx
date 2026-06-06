@@ -9,10 +9,11 @@ const productFilters = [
   { id: 'jabon', label: 'Jabones' },
 ];
 
-const ProductCatalog = ({ addToCart }) => {
+const ProductCatalog = () => {
   const { productos } = productsData;
   const [activeFilter, setActiveFilter] = useState('all');
   const location = useLocation();
+  const phoneNumber = process.env.REACT_APP_PHONE_NUMBER;
 
   useEffect(() => {
     const syncFilterWithHash = () => {
@@ -71,37 +72,60 @@ const ProductCatalog = ({ addToCart }) => {
     ? productSections.filter(section => section.products.length > 0)
     : productSections.filter(section => section.id === activeFilter);
 
-  const renderProductCard = (product) => (
-    <div key={product.id} className="product-card">
-      <div className="product-image-container">
-        {product.agotado ? (
-          <span className="badge sold-out">Agotado</span>
-        ) : (
-          <>
-            {product.destacado && <span className="badge featured">Destacado</span>}
-            {product.nuevo && <span className="badge new">Nuevo</span>}
-          </>
-        )}
-        <img
-          src={product.imagen || '/catalog/placeholder.jpeg'}
-          alt={product.nombre}
-          className="product-image"
-        />
-      </div>
-      <div className="product-info">
-        <h3 className="product-name">{product.nombre}</h3>
-        <p className="product-description">{product.descripcion}</p>
-        <div className="product-footer">
-          <span className="product-price">
-            {product.moneda} {product.precio ? product.precio.toFixed(2) : '0.00'}
-          </span>
-          <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
-            Agregar
-          </button>
+  const getProductContactUrl = (product) => {
+    const message = `Hola, me gustaria recibir mas informacion sobre ${product.nombre}.`;
+
+    if (!phoneNumber) {
+      return `/#contact`;
+    }
+
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  };
+
+  const renderProductCard = (product) => {
+    const contactUrl = getProductContactUrl(product);
+
+    return (
+      <div key={product.id} className="product-card">
+        <div className="product-image-container">
+          {product.agotado ? (
+            <span className="badge sold-out">Agotado</span>
+          ) : (
+            <>
+              {product.destacado && <span className="badge featured">Destacado</span>}
+              {product.nuevo && <span className="badge new">Nuevo</span>}
+            </>
+          )}
+          <img
+            src={product.imagen || '/catalog/placeholder.jpeg'}
+            alt={product.nombre}
+            className="product-image"
+          />
+        </div>
+        <div className="product-info">
+          <h3 className="product-name">{product.nombre}</h3>
+          <p className="product-description">{product.descripcion}</p>
+          <div className="product-footer">
+            <span className="product-price">
+              {product.moneda} {product.precio ? product.precio.toFixed(2) : '0.00'}
+            </span>
+            {product.agotado ? (
+              <span className="product-status">No disponible</span>
+            ) : (
+              <a
+                className="product-contact-btn"
+                href={contactUrl}
+                target={phoneNumber ? '_blank' : undefined}
+                rel={phoneNumber ? 'noopener noreferrer' : undefined}
+              >
+                Consultar
+              </a>
+            )}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <section className="product-catalog-section">

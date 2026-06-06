@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import eventsData from '../data/events.json';
 import './Events.css';
 
@@ -19,13 +19,13 @@ const Events = () => {
     setActiveImageIndex(null);
   };
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setActiveImageIndex((prevIndex) => (prevIndex + 1) % eventos.length);
-  };
+  }, [eventos.length]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     setActiveImageIndex((prevIndex) => (prevIndex - 1 + eventos.length) % eventos.length);
-  };
+  }, [eventos.length]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -45,7 +45,7 @@ const Events = () => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [activeImageIndex]);
+  }, [activeImageIndex, nextImage, prevImage]);
 
   // Lock body scroll when lightbox is open
   useEffect(() => {

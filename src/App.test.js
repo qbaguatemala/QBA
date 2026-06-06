@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import productsData from './data/products.json';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('catalog has products ready to publish', () => {
+  expect(productsData.productos.length).toBeGreaterThan(0);
+  expect(productsData.productos[0]).toEqual(
+    expect.objectContaining({
+      id: expect.any(Number),
+      nombre: expect.any(String),
+      precio: expect.any(Number),
+      imagen: expect.any(String),
+    })
+  );
 });

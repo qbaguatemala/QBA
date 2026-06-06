@@ -1,10 +1,10 @@
 import React from 'react';
 import ProductCatalog from '../components/ProductCatalog';
 
-const Catalog = ({ addToCart }) => {
+const Catalog = () => {
   return (
     <main style={{ paddingTop: '100px' }}>
-      <ProductCatalog addToCart={addToCart} />
+      <ProductCatalog />
     </main>
   );
 };

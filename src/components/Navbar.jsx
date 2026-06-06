@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = ({ toggleCart, cartItemsCount }) => {
+const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currentHash, setCurrentHash] = useState(window.location.hash);
   const location = useLocation();
@@ -75,11 +75,6 @@ const Navbar = ({ toggleCart, cartItemsCount }) => {
         </div>
 
         <div className="mobile-actions">
-          <button className="cart-btn" onClick={toggleCart} aria-label="Carrito">
-            <span className="material-symbols-outlined">shopping_cart</span>
-            {cartItemsCount > 0 && <span className="cart-badge">{cartItemsCount}</span>}
-          </button>
-
           <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menu">
             <span className="material-symbols-outlined">
               {isMobileMenuOpen ? 'close' : 'menu'}
@@ -92,10 +87,10 @@ const Navbar = ({ toggleCart, cartItemsCount }) => {
         </div>
 
         <div className="navbar-cta-container">
-          <button className="navbar-cta navbar-cta-cart" onClick={toggleCart}>
-            <span className="material-symbols-outlined" aria-hidden="true">shopping_bag</span>
-            {cartItemsCount > 0 ? `Mi pedido (${cartItemsCount})` : 'Mi pedido'}
-          </button>
+          <Link className="navbar-cta" to="/#contact">
+            <span className="material-symbols-outlined" aria-hidden="true">support_agent</span>
+            Contacto
+          </Link>
         </div>
       </div>
     </nav>

@@ -193,7 +193,16 @@
   color: var(--primary);
 }
 
-.add-to-cart-btn {
+.product-contact-btn,
+.product-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  white-space: nowrap;
+}
+
+.product-contact-btn {
   background-color: transparent;
   color: var(--primary);
   border: 1px solid var(--primary);
@@ -201,11 +210,16 @@
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 600;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.add-to-cart-btn:hover {
+.product-contact-btn:hover {
   background-color: var(--primary);
   color: var(--background);
+}
+
+.product-status {
+  color: var(--on-surface-variant);
+  font-size: 0.9rem;
+  font-weight: 700;
 }
