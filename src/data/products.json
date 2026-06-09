@@ -1,0 +1,248 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Perfume Mist Repelente",
+      "categoria": "general",
+      "precio": 25.00,
+      "moneda": "Q",
+      "descripcion": "Con aceites esenciales para repeler insectos.",
+      "destacado": true,
+      "nuevo": false,
+      "agotado": true,
+      "imagen": "/catalog/repelente_2.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Protector solar con base de maquillaje",
+      "categoria": "general",
+      "precio": 60.00,
+      "moneda": "Q",
+      "descripcion": "Con color natural para unificar el color del cutis.",
+      "destacado": false,
+      "nuevo": true,
+      "agotado": true,
+      "imagen": "/catalog/protector_solar_maquillaje.jpeg"
+    },
+    {
+      "id": 3,
+      "nombre": "Acondicionador sólido",
+      "categoria": "general",
+      "precio": 40.00,
+      "moneda": "Q",
+      "descripcion": "Humecta y nutre al cabello.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/conditioner.jpeg"
+    },
+    {
+      "id": 4,
+      "nombre": "Jabón de glicerina - Limón amarillo",
+      "categoria": "jabon",
+      "precio": 20.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_glicerina.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Jabón de glicerina - Limón transparente",
+      "categoria": "jabon",
+      "precio": 20.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_glicerina_2.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Jabón de glicerina - Limón rosa",
+      "categoria": "jabon",
+      "precio": 20.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": true,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_1.jpeg"
+    },
+    {
+      "id": 7,
+      "nombre": "Jabón de glicerina - Limón blanco/beige",
+      "categoria": "jabon",
+      "precio": 20.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_4.jpeg"
+    },
+    {
+      "id": 8,
+      "nombre": "Jabón de glicerina - Limón morado",
+      "categoria": "jabon",
+      "precio": 20.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_16.jpeg"
+    },
+    {
+      "id": 9,
+      "nombre": "Jabón de glicerina - Cupcake degradado",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_glicerina_cupcake_canela.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Jabón de glicerina - Cupcake marrón",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_glicerina_cupcake_canela_4.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Jabón de glicerina - Cupcake verde",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_glicerina_cupcake_aloe.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Jabón de glicerina - Cupcake blanco",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_glicerina_cupcake_blanco.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Jabón de glicerina - Cupcake naranja degradado",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_13.jpeg"
+    },
+    {
+      "id": 14,
+      "nombre": "Jabón de glicerina - Flor decorativa",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": true,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_glicerina_flor.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Jabón de glicerina - Dona degradada",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_9.jpeg"
+    },
+    {
+      "id": 16,
+      "nombre": "Jabón de glicerina - Dona con café",
+      "categoria": "jabon",
+      "precio": 30.00,
+      "moneda": "Q",
+      "descripcion": "Decorativo, humectante, exfoliante, nutritivo y terapéutico.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/jabon_2.jpeg"
+    },
+    {
+      "id": 17,
+      "nombre": "Champú sólido",
+      "categoria": "general",
+      "precio": 80.00,
+      "moneda": "Q",
+      "descripcion": "Anticaída y promueve el crecimiento. Cabello graso y seco.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/champu.jpeg"
+    },
+    {
+      "id": 18,
+      "nombre": "Sérum Hidratante",
+      "categoria": "general",
+      "precio": 75.00,
+      "moneda": "Q",
+      "descripcion": "Sérum para el rostro día o noche. Mezcla de aceites vegetales.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/serum_rostro.jpg"
+    },
+    {
+      "id": 19,
+      "nombre": "Sérum Tratamiento Capilar",
+      "categoria": "general",
+      "precio": 75.00,
+      "moneda": "Q",
+      "descripcion": "Mezcla de aceites vegetales y Aceite Esencial.",
+      "destacado": false,
+      "nuevo": false,
+      "imagen": "/catalog/serum_cabello.jpeg"
+    },
+    {
+      "id": 20,
+      "nombre": "Desodorante roll on Unisex",
+      "categoria": "general",
+      "precio": 60.00,
+      "moneda": "Q",
+      "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma.",
+      "destacado": false,
+      "nuevo": true,
+      "imagen": "/catalog/desodorante_unisex_roll_on.jpg"
+    },
+    {
+      "id": 21,
+      "nombre": "Desodorante en barra",
+      "categoria": "general",
+      "precio": 60.00,
+      "moneda": "Q",
+      "descripcion": "Con almidón de maíz, arcilla blanca, manteca de coco, aceites esenciales y aroma.",
+      "destacado": false,
+      "nuevo": true,
+      "imagen": "/catalog/desodorante_unisex.jpg"
+    },
+    {
+      "id": 22,
+      "nombre": "Barra para rasurar",
+      "categoria": "general",
+      "precio": 50.00,
+      "moneda": "Q",
+      "descripcion": "Base jabón de glicerina, aloe vera, aceite vegetal, glicerina.",
+      "destacado": false,
+      "nuevo": true,
+      "imagen": "/catalog/jabon_rasurar.jpeg"
+    }
+  ]
+}
